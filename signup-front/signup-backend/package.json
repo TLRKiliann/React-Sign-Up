@@ -1,0 +1,20 @@
+{
+  "name": "signup-backend",
+  "version": "1.0.0",
+  "description": "Sign Up App",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "koalatr33",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.5",
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,10 @@
+//mimic frontend app (post request to server)
+POST http://localhost:4000/app/signup
+Content-Type: application/json
+
+{
+    "fullName":"kemy79",
+    "userName":"koalatr33",
+    "email":"kemy@gmail.com",
+    "password":"12345"
+}
