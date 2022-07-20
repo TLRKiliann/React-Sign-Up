@@ -12,7 +12,7 @@ router.post("/signup", async (req, res) => {
     const signUpUser = new signUpTemplateCopy({
         fullName:req.body.fullName,
         userName:req.body.userName,
-        emai:req.body.email,
+        email:req.body.email,
         password:securePassword
     })
     signUpUser.save()

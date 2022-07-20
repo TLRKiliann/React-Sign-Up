@@ -1,24 +1,68 @@
 body {
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 form {
-	margin: auto;
-	margin-top: 15%;
-	width: 60%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 input {
-	margin: 5px 0px;
+    margin: 5px 0px;
 }
 
-button {
-	width: 30%;
-	margin-top: 10px;
+.btn--submit {
+    width: 25%;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.btn--submit:hover {
+    background: grey;
+    color: white;
+}
+
+.btn--submit:active {
+    background: white;
+    color: orange;
+}
+
+.main--div {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn--bloc {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: right;
+}
+
+.btn--logsign {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 50% 50%;
+}
+
+.btn--logsign:hover {
+    background: grey;
+    color: white;
+}
+
+.btn--logsign:active {
+    background: white;
+    color: orange;
+}
+
+#btn--login {
+    margin-right: 5px;
 }
