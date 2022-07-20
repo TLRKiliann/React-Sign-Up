@@ -30,7 +30,7 @@ class Login extends React.Component {
             email:this.state.email,
             password:this.state.password
         }
-        axios.post("http://localhost:4000/log/login", logedIn)
+        axios.post("http://localhost:4000/app/login", logedIn)
             .then(res => console.log(res.data))
             .catch(err => console.log(err));
 
@@ -38,8 +38,7 @@ class Login extends React.Component {
             email:"",
             password:""
         })
-        console.log("!!! Login.jsx success !!!")
-        this.state.success = true;
+        //this.setState({success: true});
     };
 
     render() {

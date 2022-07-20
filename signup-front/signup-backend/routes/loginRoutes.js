@@ -8,9 +8,6 @@ const bcrypt = require("bcrypt");
 
 router.post('/login', async (req, res) => {
 
-    //const saltPassword = await bcrypt.genSalt(10);
-    //const securePassword = await bcrypt.hash(req.body.password, saltPassword);
-
     const loginUser = await loginTemplateCopy.findOne({
         email: req.body.email,
     })
