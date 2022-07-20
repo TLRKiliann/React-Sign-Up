@@ -1,14 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import axios from "axios";
 import "../App.css";
 
 
-class Login extends Component {
+class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             email:"",
-            password:""
+            password:"",
+            success: false
         }
     };
 
@@ -22,14 +23,14 @@ class Login extends Component {
         this.setState({password: e.target.value});
     };
 
-    onSubmit = (e) => {
+    onSubmit = async (e) => {
         e.preventDefault();
 
         const logedIn = {
             email:this.state.email,
             password:this.state.password
         }
-        axios.post("http://localhost:4000/app/login", logedIn)
+        axios.post("http://localhost:4000/log/login", logedIn)
             .then(res => console.log(res.data))
             .catch(err => console.log(err));
 
@@ -37,6 +38,8 @@ class Login extends Component {
             email:"",
             password:""
         })
+        console.log("!!! Login.jsx success !!!")
+        this.state.success = true;
     };
 
     render() {
@@ -54,6 +57,19 @@ class Login extends Component {
                 <button type="submit" className="btn--submit">
                     Login
                 </button>
+                {this.state.success ? (
+                    <h4 style={{padding: "5px",
+                        background: "lightpink", color: "green"}}
+                    >
+                        Success Login !
+                    </h4>
+                ) : (
+                    <h4 style={{padding: "5px", 
+                        background: "lightpink", color: "red"}}
+                    >
+                        Not Logged in !
+                    </h4>
+                )}
 
             </form>
         )

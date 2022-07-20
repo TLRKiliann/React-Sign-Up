@@ -1,5 +1,7 @@
 const express = require("express");
+
 const router = express.Router();
+
 const signUpTemplateCopy = require("../models/SignUpModels");
 const bcrypt = require("bcrypt");
 
@@ -22,6 +24,7 @@ router.post("/signup", async (req, res) => {
     .catch(error => {
         res.json(error)
     })
-})
+    console.log("signup routes ok !");
+});
 
 module.exports = router;

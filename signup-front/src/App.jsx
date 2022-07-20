@@ -22,6 +22,7 @@ const App = () => {
         <div className="main--div">
 
             <div className="btn--bloc">
+            
                 <button type="button" onClick={handleLogin} className="btn--logsign" id="btn--login">
                     Login
                 </button>
@@ -29,6 +30,7 @@ const App = () => {
                 <button type="button" onClick={handleSignUp} className="btn--logsign">
                     SignUp
                 </button>
+
             </div>
 
             <div className="log--sign">
