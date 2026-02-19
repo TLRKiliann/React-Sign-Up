@@ -10,11 +10,11 @@
   "author": "koalatr33",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.21.2",
     "mongoose": "^8.9.5",
-    "nodemon": "^2.0.19"
+    "nodemon": "^3.1.13"
   }
 }
